@@ -1,3 +1,9 @@
 html, body {
   height: 100vh;
+  background-color: #6d3a12;
+  color: wheat;
+}
+
+.price {
+  color: black;
 }

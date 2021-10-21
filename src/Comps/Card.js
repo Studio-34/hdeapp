@@ -13,7 +13,7 @@ export default function Card(props) {
                         {props.cardText}
                     </div>
 
-                    <button type="button" className="w-100 btn btn-lg btn-outline-primary">{props.signUp}</button>
+                    <a href="https://apps.apple.com/us/app/highdefevents/id1570404215"></a><button type="button" className="w-100 btn btn-lg btn-outline-primary">{props.signUp}</button>
                 </div>
             </div>
         </div>
