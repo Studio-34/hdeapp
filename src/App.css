@@ -2,8 +2,52 @@ html, body {
   height: 100vh;
   background-color: #6d3a12;
   color: wheat;
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: calc(30vw + 30px);
 }
 
 .price {
   color: black;
+}
+
+.brand {
+  color: #b9611d;
+  border-color: #b9611d;
+}
+
+.brand:hover {
+  transition: all .3s ease;
+  border-color: #6d3a12;
+  color: #6d3a12;
+}
+
+.videoDiv {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vidCont {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
