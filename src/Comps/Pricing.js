@@ -3,7 +3,7 @@ import Card from './Card'
 
 export default function Pricing() {
   return (
-    <div>
+    <div className="px-3" id="pricing">
       <h1 className="text-center mt-5">Pricing</h1>
       <div className="row row-cols-1 row-cols-md-3 mt-5 mb-3 text-center price">
         <div className="col">

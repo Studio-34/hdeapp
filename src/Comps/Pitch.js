@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pitch() {
     return (
-        <div className="container">
+        <div className="container px-5">
                     <div className="h4">
                         Create stunning videos consisting of multiple clips without editing. <em>That’s right, no editing required.</em>
                     </div>

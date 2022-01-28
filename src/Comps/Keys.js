@@ -5,7 +5,7 @@ export default function Keys() {
     let screen = window.innerWidth;
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 px-5">
 
             <div className="row">
                 <div className="col">
