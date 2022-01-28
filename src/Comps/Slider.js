@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import SliderOverlay from '../img/SlideShow/Overlay.png';
-import ImageOne from '../img/SlideShow/Img1.png';
-import ImageTwo from '../img/SlideShow/Img2.png';
-import ImageThree from '../img/SlideShow/Img3.png';
-import ImageFour from '../img/SlideShow/Img4.png';
-import ImageFive from '../img/SlideShow/Img5.png';
-import ImageSix from '../img/SlideShow/Img6.png';
 
-export default function Slider({overlay, images=[], interval=3000}) {
+export default function Slider({iPad, overlay, images=[], interval=3000}) {
     // const images = [ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix];
     const [thumbnails, setThumnails] = useState([]);
     // const interval = 3000;
@@ -19,7 +12,7 @@ export default function Slider({overlay, images=[], interval=3000}) {
     useEffect(() => {
         setThumnails(images);
         setCurrentSlideStyle({
-            backgroundImage: "url('" + images[currentSlide] + "'), url('" + overlay + "')"
+            backgroundImage: "url('" + overlay + "'), url('" + images[currentSlide] + "')"
         });
 
         if (currentSlide > 0) {

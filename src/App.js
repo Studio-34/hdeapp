@@ -8,12 +8,6 @@ import Header from './Comps/Header';
 import Pricing from './Comps/Pricing';
 import Navbar from './Comps/Navbar';
 import Slider from './Comps/Slider';
-import ImageOne from './img/SlideShow/Img1.png';
-import ImageTwo from './img/SlideShow/Img2.png';
-import ImageThree from './img/SlideShow/Img3.png';
-import ImageFour from './img/SlideShow/Img4.png';
-import ImageFive from './img/SlideShow/Img5.png';
-import ImageSix from './img/SlideShow/Img6.png';
 
 function App() {
   return (
