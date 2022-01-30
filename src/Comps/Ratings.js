@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Stack } from 'react-bootstrap';
 import { IconContext } from 'react-icons';
-import { AiFillStar } from 'react-icons/ai'
 
-export default function Ratings() {
+export default function Ratings(props) {
+
     return (
         <Container className='mx-auto text-center'>
             <IconContext.Provider
@@ -14,17 +14,14 @@ export default function Ratings() {
                     <Stack gap={3}>
 
                         <Col>
-                            <AiFillStar />
-                            <AiFillStar />
-                            <AiFillStar />
-                            <AiFillStar />
-                            <AiFillStar />
+                            {props.stars}
+                            <starReview />
                         </Col>
                         <Col>
-                            I love using this app
+                            {props.review}
                         </Col>
-                        <Col xs={{ span: 1, offset: 7 }}>
-                            -Page
+                        <Col xs={{ span: 3, offset: 6 }}>
+                            - {props.name}
                         </Col>
                     </Stack>
                 </Row>
