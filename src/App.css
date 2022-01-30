@@ -80,9 +80,9 @@ section.slideshow section.slide div.slide-thumbnail{
 .header {
   height: 75vh;
   background-image: url(./img/rowOne.png), url(./img/rowTwo.png), url(./img/rowThree.png), url(./img/rowFour.png), url(./img/rowFive.png), url(./img/rowSix.png);
-  background-repeat: "repeat";
-  background-size: "100%";
-  background-position: "center";
+  background-repeat: repeat;
+  background-size: 100% auto;
+  background-position: center;
   /* background-size: "contain"; */
   /* width: "1126px"; */
   /* border-radius: 10px; */
