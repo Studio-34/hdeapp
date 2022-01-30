@@ -23,14 +23,37 @@ function App() {
       rating: 5,
       review: 'This thing lets me add every at-bat from my son’s game into one video, and also have his stats and team logo in the footer. I love it!!',
       name: 'Danny'
-    }
+    },
+    {
+      image: './img/iPad-Pro-Dark-Mockup_Yearling.jpg',
+      rating: 5,
+      review: 'With this app I can create great quality sale videos, without the cost or scheduling headache of hiring a videographer. ',
+      name: 'Kayla'
+    },
+    {
+      image: './img/iPad-Pro-Dark-Mockup_Soccer.jpg',
+      rating: 5,
+      review: 'It’s so convenient to be able to post my daughter’s highlights in one single video on social media. Add in the fact that I can add her info and team logo, this app is amazing!',
+      name: 'Meagan'
+    },
+    {
+      image: './img/iPad-Pro-Dark-Mockup_Jumper.jpg',
+      rating: 5,
+      review: 'We use this app for our horse racing partnership. It allows trainers in multiple locations to gather media throughout the month, and delivers the videos to us with our logo in the footer to give them a professional touch.',
+      name: 'Steve'
+    },
+    {
+      image: './img/iPad-Pro-Dark-Mockup_Basketball.jpg',
+      rating: 5,
+      review: 'Need Review',
+      name: 'Need Name'
+    },
   ];
 
   const images = slideInfo.map( a => a.image);
   const stars = slideInfo.map( a => a.rating);
   const review = slideInfo.map( a => a.review);
   const name = slideInfo.map( a => a.name);
-  console.log (images);
 
   return (
     <div className="App mx-auto">
@@ -39,26 +62,17 @@ function App() {
       </div>
       {/* <Header /> */}
       <Slider 
-        interval={3000}
+        interval={900000000}
         overlay={'./img/iPad-Pro-Mockup_Frame.png'}
         stars={stars}
         review={review}
         name={name}
-        // slideInfo={slideInfo}
-        // images={[
-        //   './img/iPad-Pro-Dark-Mockup_Barrel.jpg',
-        //   './img/iPad-Pro-Dark-Mockup_Baseball.jpg',
-        //   './img/iPad-Pro-Dark-Mockup_Basketball.jpg',
-        //   './img/iPad-Pro-Dark-Mockup_Jumper.jpg',
-        //   './img/iPad-Pro-Dark-Mockup_Soccer.jpg',
-        //   './img/iPad-Pro-Dark-Mockup_Yearling.jpg'
-        // ]}
         images={images}
       />
-      <Video />
-      <Pitch />
-      <Keys />
-      <Pricing />
+      {/* <Video /> */}
+      {/* <Pitch /> */}
+      {/* <Keys /> */}
+      {/* <Pricing /> */}
     </div>
   );
 }

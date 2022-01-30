@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Ratings from '../Comps/Ratings';
 import { AiFillStar } from 'react-icons/ai'
+import { Row, Col } from 'react-bootstrap';
 
 // export default function Slider({ overlay, images = [], interval = 3000 }) {
 export default function Slider({ overlay, images = [], stars = [], review = [], name = [], interval = 3000 }) {
@@ -33,7 +34,7 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
     let starReview = []
 
     function StarHelper() {
-        for ( let i = 0; i < stars[currentSlide]; i++) {
+        for (let i = 0; i < stars[currentSlide]; i++) {
             starReview.push(<AiFillStar />);
         };
     }
@@ -44,35 +45,41 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
 
 
     return (
-        <section>
-            <section>
-                <Ratings 
-                    interval={interval[currentSlide]}
-                    // stars={stars[currentSlide]}
-                    stars={starReview}
-                    // slideIndex={currentSlide}
-                    review={review[currentSlide]}
-                    name={name[currentSlide]}
-                />
-            </section>
-            <section className="slideshow">
-                <div className="slide-holder">
-                    {/* <section className="slide previous-slide">
+        <section className="slideshow">
+        <Row xs={1} md={3} className='justify-content-center'>
+            <Col md={8} xs={12} md={{ order: 2 }} className="text-start">
+                {/* <section> */}
+                    <Ratings
+                        interval={interval[currentSlide]}
+                        // stars={stars[currentSlide]}
+                        stars={starReview}
+                        // slideIndex={currentSlide}
+                        review={review[currentSlide]}
+                        name={name[currentSlide]}
+                    />
+                {/* </section> */}
+            </Col>
+            <Col md={3} xs={8}>
+                {/* <section> */}
+                    {/* <div className="slide-holder"> */}
+                        {/* <section className="slide previous-slide">
                     <div className="slide-thumbnail"></div>
                 </section> */}
-                    <section className="slide current-slide">
-                        <div style={currentSlideStyle} className="slide-thumbnail"></div>
-                    </section>
-                    {/* <section className="slide next-slide">
+                            <div style={currentSlideStyle} className="slide-thumbnail"></div>
+                        {/* <section className="slide current-slide"> */}
+                        {/* </section> */}
+                        {/* <section className="slide next-slide">
                     <div className="slide-thumbnail"></div>
                 </section> */}
-                </div>
+                    {/* </div> */}
 
-                {/* <div className="slideshow-controller">
+                    {/* <div className="slideshow-controller">
                 <span>Previous</span>
                 <span>Next</span>
             </div> */}
-            </section>
+                {/* </section> */}
+            </Col>
+        </Row>
         </section>
     );
 }

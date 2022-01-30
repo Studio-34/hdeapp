@@ -1,81 +1,54 @@
 html, body {
   height: 100vh;
-  /* background-color: #131313; */
-  /* color: wheat; */
-  /* width: 90%;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .App {
-  /* background-color: #B04E12; */
   background-color: rgb(32,32,32);
   height: 100%;
   top: 0;
   color: white;
 }
 
-.slider {
+/* .slider {
   background-color: unset;
   background-image: url(./img/SlideShow/Overlay.png);
-}
+} */
 
 section.slideshow{
-    width: 100vw;
-    height: 100vh;
-    max-height: 130vw;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
     background-color: rgb(32,32,32);
 }
-section.slideshow div.slide-holder{
+/* section.slideshow div.slide-holder{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     height: 100%;
-}
-section.slideshow .slide-holder {
-  /* height: calc(90% - 30px); */
-}
+} */
 
 section.slideshow section.current-slide{
-    width: 80vw;
-    height: 63vw;
-    max-height: 100%;
-    /* min-height: 80vh; */
-    /* max-width: 90%; */
-    /* max-height: calc(90% - 30px); */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* padding: 10px 30px; */
-}
-/* section.slideshow section.previous-slide,
-section.slideshow section.next-slide{
-    width: 200px;
-    height: 150px;
-} */
-section.slideshow section.slide div.slide-thumbnail{
-    width: 100%;
+    /* width: 80%; */
     height: 100%;
-    /* max-width: 80vw; */
-    /* max-height: 48vw; */
-    /* margin-bottom: 5px; */
-    /* background: #541d82; */
-    background-size: calc(60vw + 75px) auto;
+    /* max-height: 100%; */
+}
+
+section.slideshow div.slide-thumbnail{
+    width: 100%;
+    /* height: 100%; */
+    /* background-size: calc(60vw + 75px) auto; */
+    background-size: 100%;
+    padding-top: 74.166666666667%;
+    height: 0;
     background-position: center;
     background-repeat: no-repeat;
-    /* border-radius: 6px; */
-    /* box-shadow: 5px 5px 6px #551d829c; */
 }
 
 .frameDiv {
-  /* border: #131313; */
   border: .5rem solid #131313b7;
   border-style: solid;
-  /* background-color: rgba(245, 245, 245, 0.952); */
-  /* border-width: 5px; */
-  /* border-radius: 5px; */
-  /* box-shadow: 0 .5rem 3rem -.15rem rgba(224, 224, 224, 0.884); */
 }
 
 .header {
@@ -84,9 +57,6 @@ section.slideshow section.slide div.slide-thumbnail{
   background-repeat: repeat;
   background-size: 100% auto;
   background-position: center;
-  /* background-size: "contain"; */
-  /* width: "1126px"; */
-  /* border-radius: 10px; */
   animation: header-bg-scroll infinite 135s linear;
 }
 

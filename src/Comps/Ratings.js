@@ -5,15 +5,15 @@ import { IconContext } from 'react-icons';
 export default function Ratings(props) {
 
     return (
-        <Container className='mx-auto text-center'>
+        <Container className='mx-auto'>
             <IconContext.Provider
-                value={{ color: '#b9611d', size: '3rem' }}
+                value={{ color: '#b9611d', size: '2.3rem' }}
             >
 
                 <Row>
                     <Stack gap={3}>
 
-                        <Col>
+                        <Col className="text-center">
                             {props.stars}
                             <starReview />
                         </Col>
