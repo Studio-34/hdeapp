@@ -18,14 +18,14 @@ function App() {
       <Header />
       <Slider 
         interval={3000}
-        overlay={'./img/Overlay.png'}
+        overlay={'./img/iPad-Pro-Mockup_Frame.png'}
         images={[
-          './img/Img1.png',
-          './img/Img2.png',
-          './img/Img3.png',
-          './img/Img4.png',
-          './img/Img5.png',
-          './img/Img6.png'
+          './img/iPad-Pro-Dark-Mockup_Barrel.jpg',
+          './img/iPad-Pro-Dark-Mockup_Baseball.jpg',
+          './img/iPad-Pro-Dark-Mockup_Basketball.jpg',
+          './img/iPad-Pro-Dark-Mockup_Jumper.jpg',
+          './img/iPad-Pro-Dark-Mockup_Soccer.jpg',
+          './img/iPad-Pro-Dark-Mockup_Yearling.jpg'
         ]}
       />
       <Video />
