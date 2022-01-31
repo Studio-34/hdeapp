@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <Container className="text-center pt-5 pb-3 mx-auto" id="home">
             <Row xs={2} className='justify-content-center'>
-                <Col xs={7} md={5}>
+                <Col xs={7} md={4}>
                     <h1>
                         <span className="d-inline-block">Welcome to </span>
                         <span className="d-inline-block">High Def Events</span>
