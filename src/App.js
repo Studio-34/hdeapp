@@ -10,6 +10,7 @@ import Navbar from './Comps/Navbar';
 import Slider from './Comps/Slider';
 import About from './Comps/About';
 import Home from './Comps/Home';
+import Auction from './Comps/Auction';
 
 function App() {
 
@@ -44,6 +45,12 @@ function App() {
       review: 'We use this app for our horse racing partnership. It allows trainers in multiple locations to gather media throughout the month, and delivers the videos to us with our logo in the footer to give them a professional touch.',
       name: 'Steve'
     },
+    // {
+    //   image: './img/iPad-Pro-Dark-Mockup_Basketball.jpg',
+    //   rating: 5,
+    //   review: 'Need Review',
+    //   name: 'Need Name'
+    // },
   ];
 
   const images = slideInfo.map( a => a.image);
@@ -68,6 +75,7 @@ function App() {
       />
       <About />
       <Video />
+      <Auction />
       {/* <Pitch /> */}
       {/* <Keys /> */}
       {/* <Pricing /> */}
