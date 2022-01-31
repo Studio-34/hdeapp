@@ -8,24 +8,24 @@ export default function About() {
     let features = [
         {
             title: <GiFilmStrip />,
-            subtitle: 'waiting',
+            // subtitle: 'waiting',
             text: 'Splices multiple clips together, creating one seamless video',
-            link1: 'waiting',
-            link2: 'waiting',
+            // link1: 'waiting',
+            // link2: 'waiting',
         },
         {
             title: <BsLayersHalf />,
-            subtitle: 'waiting',
+            // subtitle: 'waiting',
             text: 'Overlays custom graphics and personalized text in the footer area of the video',
-            link1: 'waiting',
-            link2: 'waiting',
+            // link1: 'waiting',
+            // link2: 'waiting',
         },
         {
             title: <FaCloudUploadAlt />,
-            subtitle: 'waiting',
+            // subtitle: 'waiting',
             text: 'Uploads the video directly to a web hosting platform, and delivers the video link to the user. The user can easily share the link via text, email, or social media',
-            link1: 'waiting',
-            link2: 'waiting',
+            // link1: 'waiting',
+            // link2: 'waiting',
         },
     ];
 
