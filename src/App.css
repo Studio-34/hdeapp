@@ -1,6 +1,6 @@
 html, body {
   height: 100vh;
-    background: #232323;
+  background: #232323;
   background: linear-gradient(180deg, rgba(0,0,17,1) 0%, rgba(35,35,35,1) 31%);
   overflow-y: auto;
   overflow-x: hidden;
