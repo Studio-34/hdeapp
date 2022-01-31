@@ -1,14 +1,14 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import iPhone from '../img/Iphone-Mockup.jpg';
+import iPhone from '../img/Iphone-Mockup.png';
 import AppStore from '../img/appStore.svg'
 
 export default function Home() {
     return (
-        <Container className="text-center pt-5 pb-3 mx-auto" id="home">
-            <Row xs={2} className='justify-content-center'>
-                <Col xs={7} md={4}>
+        <Container className="text-center" id="home">
+            <Row className='justify-content-center headerRow'>
+                <Col xs={12} lg={9} className="headerText">
                     <h1>
                         <span className="d-inline-block">Welcome to </span>
                         <span className="d-inline-block">High Def Events</span>
@@ -23,7 +23,7 @@ export default function Home() {
                         </Link>
                     </Col>
                 </Col>
-                <Col xs={5} md={2}>
+                <Col xs={12} lg={3}>
                     <img src={iPhone} className="img-fluid" />
 
                 </Col>
