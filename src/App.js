@@ -11,6 +11,7 @@ import Slider from './Comps/Slider';
 import About from './Comps/About';
 import Home from './Comps/Home';
 import Auction from './Comps/Auction';
+import Faq from './Comps/Faq';
 
 function App() {
 
@@ -76,6 +77,7 @@ function App() {
       <About />
       <Video />
       <Auction />
+      <Faq />
       {/* <Pitch /> */}
       {/* <Keys /> */}
       {/* <Pricing /> */}

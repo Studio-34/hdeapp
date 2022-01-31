@@ -1,7 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import { MdExpandMore } from 'react-icons/md'
 
-let questions = [
+let qAList = [
     {
         question: 'Is the app free?',
         answer: 'Yes, the app is free to download. And currently free to create both custom and auction videos.'
@@ -21,7 +26,7 @@ let questions = [
     {
         question: 'How do I get custom graphics for my company or team ?',
         answer: 'Fill out a contact form to start the process, and an HDE team member will reach out to get you sign up info. '
-        
+
     },
     {
         question: 'While recording video, the brightness increased and caused a white out on my screen.How do I fix this ?',
@@ -33,18 +38,40 @@ let questions = [
     },
 ]
 
-const faq = questions.map(() =>
-    
-
-)
+let faqMap = qAList.map((el, index) =>
+    <Accordion>
+        <AccordionSummary
+            expandIcon={<MdExpandMore />}
+            aria-controls={`panel${index}-content`}
+            id={`panel${index}-header`}
+        >
+            <Typography className="question">
+                {el.question}
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+            <Typography className="indent">
+                {el.answer}
+            </Typography>
+        </AccordionDetails>
+    </Accordion>
+);
 
 export default function Faq() {
-  return <Container>
-      <Row>
-          <Col>
+    return (
+        <Container className="text-center my-5" id="faq">
+            <Row>
+                <Col>
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+                    {faqMap}
+                    <p className="pt-2">
+                        If you have any other questions or issues, please contact us for support. 
+                    </p>
 
-          </Col>
-      </Row>
-  </Container>
-  ;
+                </Col>
+            </Row>
+        </Container>
+    );
 }

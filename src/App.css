@@ -119,13 +119,22 @@ section.slideshow div.slide-thumbnail{
 }
 
 .card svg {
-  font-size: 5rem;
-  color: #b9611d;
+  font-size: 5rem !important;
+  color: #b9611d !important;
 }
-
 
 .price {
   color: black;
+}
+
+p.question {
+  font-weight: bolder;
+  /* font-size: 1.5rem; */
+}
+
+.indent {
+  color: #5c5b5b;
+  text-indent: 5rem;
 }
 
 .brand {
