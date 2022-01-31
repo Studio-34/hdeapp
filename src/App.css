@@ -2,6 +2,11 @@ html, body {
   height: 100vh;
 }
 
+#home p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .App {
   background-color: rgb(32,32,32);
   height: 100%;

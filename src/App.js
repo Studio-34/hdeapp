@@ -8,6 +8,8 @@ import Header from './Comps/Header';
 import Pricing from './Comps/Pricing';
 import Navbar from './Comps/Navbar';
 import Slider from './Comps/Slider';
+import About from './Comps/About';
+import Home from './Comps/Home';
 
 function App() {
 
@@ -61,15 +63,16 @@ function App() {
         <Navbar />
       </div>
       {/* <Header /> */}
+      <Home />
       <Slider 
-        interval={900000000}
+        interval={4000}
         overlay={'./img/iPad-Pro-Mockup_Frame.png'}
         stars={stars}
         review={review}
         name={name}
         images={images}
       />
-      {/* <Video /> */}
+      <About />
       {/* <Pitch /> */}
       {/* <Keys /> */}
       {/* <Pricing /> */}

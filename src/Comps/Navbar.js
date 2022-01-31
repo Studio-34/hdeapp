@@ -15,17 +15,20 @@ export default function navbar() {
                             <img
                                 alt=""
                                 src={AppLogo}
-                                width="30"
-                                height="30"
+                                width="40"
+                                height="40"
                                 className="d-inline-block align-top"
                             />
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse>
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#video">Video</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/#about">About</Nav.Link>
+                            <Nav.Link as={Link} to="/#custom">Custom</Nav.Link>
+                            <Nav.Link as={Link} to="/#auction">Auction</Nav.Link>
+                            <Nav.Link as={Link} to="/#faq">FAQs</Nav.Link>
+                            <Nav.Link as={Link} to="/#contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

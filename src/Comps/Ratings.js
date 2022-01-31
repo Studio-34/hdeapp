@@ -20,7 +20,7 @@ export default function Ratings(props) {
                         <Col>
                             {props.review}
                         </Col>
-                        <Col xs={{ span: 3, offset: 6 }}>
+                        <Col xs={{ span: 5, offset: 8 }}>
                             - {props.name}
                         </Col>
                     </Stack>
