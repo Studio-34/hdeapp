@@ -73,6 +73,7 @@ function App() {
         images={images}
       />
       <About />
+      <Video />
       {/* <Pitch /> */}
       {/* <Keys /> */}
       {/* <Pricing /> */}
