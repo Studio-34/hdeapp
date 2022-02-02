@@ -50,7 +50,7 @@ let faqMap = qAList.map((el, index) =>
             </Typography>
         </AccordionSummary>
         <AccordionDetails>
-            <Typography className="indent">
+            <Typography className="indent text-start">
                 {el.answer}
             </Typography>
         </AccordionDetails>
