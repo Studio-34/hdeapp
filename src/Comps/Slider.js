@@ -46,8 +46,8 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
 
     return (
         <section className="slideshow">
-        <Row xs={1} md={3} className='justify-content-center'>
-            <Col md={8} xs={10} md={{ order: 2 }} className="my-3 text-start">
+            <Row xs={1} md={3} className='justify-content-center'>
+                <Col md={8} xs={10} md={{ order: 2 }} className="my-3 text-start d-flex align-items-center">
                 {/* <section> */}
                     <Ratings
                         interval={interval[currentSlide]}
