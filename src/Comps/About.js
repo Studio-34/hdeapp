@@ -46,7 +46,7 @@ export default function About() {
     );
 
     return (
-        <Container className="my-5">
+        <Container className="my-5" id="about">
             <Row className='justify-content-center'>
                 <Col>
                     <h2 className='text-center'>

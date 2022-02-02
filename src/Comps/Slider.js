@@ -29,7 +29,7 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
             }
         }, interval);
         return () => clearInterval(loop);
-    }, [images, currentSlide, interval]);
+    }, [images, currentSlide, interval, overlay]);
 
     let starReview = []
 
@@ -40,9 +40,6 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
     }
 
     StarHelper();
-
-    console.log(starReview)
-
 
     return (
         <section className="slideshow">

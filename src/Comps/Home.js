@@ -10,8 +10,11 @@ export default function Home() {
             <Row className='justify-content-center headerRow'>
                 <Col xs={12} lg={9} className="headerText">
                     <h1>
-                        <span className="d-inline-block">Welcome to </span>
-                        <span className="d-inline-block">High Def Events</span>
+                        <span className="d-inline-block">
+                            Welcome to High Def Events
+                        </span>
+                        {/* <span className="d-inline-block">Welcome to</span>
+                        <span className="d-inline-block">High Def Events</span> */}
                     </h1>
                     <p className="px-2">
                         This innovative app splices multiple clips into one seamless video, and delivers the video to you in the form of an easily shareable link.

@@ -14,7 +14,8 @@ html, body {
 }
 
 .headerRow {
-  padding: 5vw;
+  padding: 5vw 5vw 10px;
+  /* padding-bottom: 2vw; */
 }
 
 .headerText {
@@ -35,13 +36,13 @@ html, body {
   background-image: url(./img/SlideShow/Overlay.png);
 } */
 
-section.slideshow{
+/* section.slideshow{ */
     /* width: 100vw; */
     /* height: 100vh; */
     /* max-width: 100%; */
     /* max-height: 100%; */
     /* background-color: rgb(32,32,32); */
-}
+/* } */
 /* section.slideshow div.slide-holder{
     display: flex;
     justify-content: space-evenly;

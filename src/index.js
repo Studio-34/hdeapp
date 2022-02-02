@@ -1,16 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import App from './App';
+import Faq from './Comps/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Comps/Navbar'
 
 
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
-      <App />
+      <div className="App mx-auto">
+        <div className='sticky-top'>
+          <Navbar />
+        </div>
+        <App />
+      </div>
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
