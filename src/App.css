@@ -192,3 +192,8 @@ li:hover ul {
   font-weight: normal;
   color: wheat;
 }
+
+.footer {
+  padding: calc(5vh + 20px);
+  background-color: black;
+}

@@ -60,6 +60,8 @@ export default function About() {
                 <h3 className='text-center py-3'>
                     Key Features
                 </h3>
+                </Row>
+                <Row xs={1} lg={3}>
                     {/* <CardGroup className='mx-auto'> */}
                     {featureCard}
 

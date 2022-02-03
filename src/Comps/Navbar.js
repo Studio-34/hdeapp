@@ -14,7 +14,7 @@ export default function navbar() {
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container>
                         <Navbar.Brand as={NavHashLink} smooth activeClassName="selected"
-                            scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#home" onclick="scroll(0,0)">
+                            scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#home" href="/#home" onclick="scroll(0,0)">
                             <img
                                 alt=""
                                 src={AppLogo}
@@ -27,15 +27,17 @@ export default function navbar() {
                         <Navbar.Collapse>
                             <Nav className="me-auto">
                                 <Nav.Link as={NavHashLink} smooth activeClassName="selected"
-                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#home" onclick="scroll(0,0)">Home</Nav.Link>
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#home" href="/#home" onclick="scroll(0,0)">Home</Nav.Link>
                                 <Nav.Link as={HashLink} smooth activeClassName="selected"
-                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#about">About</Nav.Link>
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#about" href="/#about">About</Nav.Link>
                                 <Nav.Link as={HashLink} smooth activeClassName="selected"
-                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#custom">Custom</Nav.Link>
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#custom" href="/#custom">Custom</Nav.Link>
                                 <Nav.Link as={HashLink} smooth activeClassName="selected"
-                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} activeStyle={{ color: 'red' }} to="/#auction">Auction</Nav.Link>
-                                <Nav.Link as={NavLink} to="/faq">FAQs</Nav.Link>
-                                <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#auction" href="/#auction">Auction</Nav.Link>
+                                <Nav.Link as={HashLink} smooth activeClassName="selected"
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#faq" href="/#faq">FAQs</Nav.Link>
+                                <Nav.Link as={HashLink} smooth activeClassName="selected"
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: 'red' }} to="/#contact" href="/#contact">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

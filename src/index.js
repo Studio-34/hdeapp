@@ -11,6 +11,8 @@ import App from './App';
 import Faq from './Comps/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Comps/Navbar'
+import Home from './Comps/Home'
+import Footer from './Comps/Footer';
 
 
 ReactDOM.render(
@@ -20,7 +22,9 @@ ReactDOM.render(
         <div className='sticky-top'>
           <Navbar />
         </div>
+          <Home />
         <App />
+        <Footer />
       </div>
     </React.StrictMode>
   </BrowserRouter>,
