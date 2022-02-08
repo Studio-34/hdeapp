@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 export default function Ratings(props) {
 
     return (
-        <Container className='mx-auto'>
+        <Container className='mx-auto h-100 resText'>
             <IconContext.Provider
                 value={{ color: '#b9611d', size: '2.3rem' }}
             >

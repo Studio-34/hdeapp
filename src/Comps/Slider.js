@@ -13,15 +13,17 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
     // const [nextSlideStyle, setNextSlideStyle] = useState({});
     const [currentSlideStyle, setCurrentSlideStyle] = useState({});
 
+    function setHeight() {
+        const height = document.getElementById('sliderCol')?.clientHeight;
+        document.getElementById('reviewCol').style.height = `${height}px`
+    }
+
     useEffect(() => {
-        // setThumbnails(images);
         setCurrentSlideStyle({
             backgroundImage: "url('" + overlay + "'), url('" + images[currentSlide] + "')"
         });
-
-
+        setHeight();
         const loop = setInterval(() => {
-            // console.log(interval);
             if (currentSlide === images.length - 1) {
                 setCurrentSlide(0);
             } else {
@@ -42,39 +44,18 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
     StarHelper();
 
     return (
-        <section className="slideshow">
-            <Row xs={1} md={3} className='justify-content-center'>
-                <Col md={8} xs={10} md={{ order: 2 }} className="my-3 text-start d-flex align-items-center">
-                {/* <section> */}
+        <section className="slideshow dblock">
+            <Row xs={1} lg={3} className='justify-content-center'>
+                <Col lg={8} xs={10} lg={{ order: 2 }} className="my-3 text-start d-flex align-items-center" id="reviewCol">
                     <Ratings
                         interval={interval[currentSlide]}
-                        // stars={stars[currentSlide]}
                         stars={starReview}
-                        // slideIndex={currentSlide}
                         review={review[currentSlide]}
                         name={name[currentSlide]}
                     />
-                {/* </section> */}
             </Col>
-            <Col md={3} xs={10} className='my-3'>
-                {/* <section> */}
-                    {/* <div className="slide-holder"> */}
-                        {/* <section className="slide previous-slide">
-                    <div className="slide-thumbnail"></div>
-                </section> */}
+            <Col lg={4} xs={10} className='my-3 py-3' id="sliderCol">
                             <div style={currentSlideStyle} className="slide-thumbnail"></div>
-                        {/* <section className="slide current-slide"> */}
-                        {/* </section> */}
-                        {/* <section className="slide next-slide">
-                    <div className="slide-thumbnail"></div>
-                </section> */}
-                    {/* </div> */}
-
-                    {/* <div className="slideshow-controller">
-                <span>Previous</span>
-                <span>Next</span>
-            </div> */}
-                {/* </section> */}
             </Col>
         </Row>
         </section>

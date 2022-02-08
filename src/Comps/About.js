@@ -9,21 +9,21 @@ export default function About() {
         {
             title: <GiFilmStrip />,
             // subtitle: 'waiting',
-            text: 'Splices multiple clips together, creating one seamless video',
+            text: 'Splices multiple clips together, adding a transition effect between each clip, with the end result being one seamless video.',
             // link1: 'waiting',
             // link2: 'waiting',
         },
         {
             title: <BsLayersHalf />,
             // subtitle: 'waiting',
-            text: 'Overlays custom graphics and personalized text in the footer area of the video',
+            text: 'Overlays custom graphics and personalized text in the footer area of the video. Great for sports teams and businesses.',
             // link1: 'waiting',
             // link2: 'waiting',
         },
         {
             title: <FaCloudUploadAlt />,
             // subtitle: 'waiting',
-            text: 'Uploads the video directly to a web hosting platform, and delivers the video link to the user. The user can easily share the link via text, email, or social media',
+            text: 'Custom and Auction sections need a different background color to separate themselves and give the design a little more depth.',
             // link1: 'waiting',
             // link2: 'waiting',
         },
@@ -46,13 +46,13 @@ export default function About() {
     );
 
     return (
-        <Container className="my-5" id="about">
+        <Container className="py-5 d-block" id="about">
             <Row className='justify-content-center'>
                 <Col>
                     <h2 className='text-center'>
                         About
                     </h2>
-                    <p>
+                    <p className="mx-3">
                         If you love sharing video content with your family, friends, or business partners, but are tired of having to share multiple files at a time, this app is for you!! If you would love to have multiple videos spliced into one, but don’t have the time, knowledge or desire to master complicated editing software, this app is the perfect solution!! The HDE app is jam-packed with features that are all designed for one purpose… to simplify the user experience.
                     </p>
                 </Col>
