@@ -8,7 +8,7 @@ export default function Contact() {
     const YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
     const YOUR_USER_ID = process.env.REACT_APP_YOUR_USER_ID;
     
-    init({YOUR_USER_ID});
+    init(`${YOUR_USER_ID}`);
     
     console.log(process.env.REACT_APP_YOUR_USER_ID === YOUR_USER_ID)
 
@@ -18,7 +18,7 @@ export default function Contact() {
         e.preventDefault();
         console.log('in the sendEmail Func ', {YOUR_USER_ID})
 
-        emailjs.sendForm({YOUR_SERVICE_ID}, {YOUR_TEMPLATE_ID}, form.current, {YOUR_USER_ID})
+        emailjs.sendForm(`${YOUR_SERVICE_ID}`, `${YOUR_TEMPLATE_ID}`, form.current, `${YOUR_USER_ID}`)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
