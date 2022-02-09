@@ -203,8 +203,13 @@ li:hover ul {
 }
 
 .footer {
-  padding: calc(5vh + 20px);
+  .row {
+    padding: calc(3vh + 5px) calc(10vw + 5px); 
+  }
+  // padding-right: calc(20vw + 20px);
+  // padding-left: calc(20vw + 20px);
   background-color: #b9611d;
+  color:black;
 }
 .active {
   color: #fff;

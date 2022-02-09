@@ -1,7 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { IconContext } from 'react-icons';
-import { AiFillStar } from 'react-icons/ai'
+import { Container, Row, Button } from 'react-bootstrap';
 
 export default function Video(props) {
 

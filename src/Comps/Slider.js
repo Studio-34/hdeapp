@@ -3,14 +3,8 @@ import Ratings from '../Comps/Ratings';
 import { AiFillStar } from 'react-icons/ai'
 import { Row, Col } from 'react-bootstrap';
 
-// export default function Slider({ overlay, images = [], interval = 3000 }) {
 export default function Slider({ overlay, images = [], stars = [], review = [], name = [], interval = 3000 }) {
-    // const images = [ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix];
-    // const [thumbnails, setThumbnails] = useState([]);
-    // const interval = 3000;
-    // const [previousSlideStyle, setPreviousSlideStyle] = useState({});
     const [currentSlide, setCurrentSlide] = useState(0);
-    // const [nextSlideStyle, setNextSlideStyle] = useState({});
     const [currentSlideStyle, setCurrentSlideStyle] = useState({});
 
     function setHeight() {
@@ -46,7 +40,7 @@ export default function Slider({ overlay, images = [], stars = [], review = [], 
     return (
         <section className="slideshow dblock">
             <Row xs={1} lg={3} className='justify-content-center'>
-                <Col lg={8} xs={10} lg={{ order: 2 }} className="my-3 text-start d-flex align-items-center" id="reviewCol">
+                <Col xs={10} lg={{ number: 8, order: 2 }} className="my-3 text-start d-flex align-items-center" id="reviewCol">
                     <Ratings
                         interval={interval[currentSlide]}
                         stars={starReview}

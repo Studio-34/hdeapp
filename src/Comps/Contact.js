@@ -9,8 +9,6 @@ export default function Contact() {
     const YOUR_USER_ID = process.env.REACT_APP_YOUR_USER_ID;
     
     init(`${YOUR_USER_ID}`);
-    
-    console.log(process.env.REACT_APP_YOUR_USER_ID === YOUR_USER_ID)
 
     const form = useRef();
 
@@ -58,15 +56,6 @@ export default function Contact() {
                             Submit
                         </Button>
                     </Form>
-                    {/* <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label>
-                        <input type="text" name="user_name" />
-                        <label>Email</label>
-                        <input type="email" name="user_email" />
-                        <label>Message</label>
-                        <textarea name="message" />
-                        <input type="submit" value="Send" />
-                    </form> */}
                 </Col>
             </Row>
         </Container>

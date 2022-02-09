@@ -3,8 +3,6 @@ import AppLogo from '../img/appIcon.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
-import { Switch, Route, Routes, Link } from "react-router-dom";
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 import ScrollSpy from 'react-scrollspy-navigation';
 

@@ -25,18 +25,18 @@ export default function Home() {
                     <Row>
                     <Col>
                         <Link to="https://apps.apple.com/us/app/highdefevents/id1570404215">
-                            <img className="img-fluid" src={AppStore} />
+                            <img className="img-fluid" src={AppStore} alt="App Store Icon" />
                         </Link>
                     </Col>
                     <Col>
                         <Link to="https://apps.apple.com/us/app/highdefevents/id1570404215">
-                            <img className="img-fluid" src={GooglePlay} />
+                            <img className="img-fluid" src={GooglePlay} alt="Google Play Icon" />
                         </Link>
                     </Col>
                     </Row>
                 </Col>
                 <Col xs={12} lg={3}>
-                    <img src={iPhone} className="img-fluid" />
+                    <img src={iPhone} className="img-fluid" alt="HDE App on iPhone" />
 
                 </Col>
             </Row>

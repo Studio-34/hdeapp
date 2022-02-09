@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, CardGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { GiFilmStrip } from 'react-icons/gi';
 import { BsLayersHalf } from 'react-icons/bs';
 import { FaCloudUploadAlt } from 'react-icons/fa';
@@ -8,24 +8,15 @@ export default function About() {
     let features = [
         {
             title: <GiFilmStrip />,
-            // subtitle: 'waiting',
             text: 'Splices multiple clips together, adding a transition effect between each clip, with the end result being one seamless video.',
-            // link1: 'waiting',
-            // link2: 'waiting',
         },
         {
             title: <BsLayersHalf />,
-            // subtitle: 'waiting',
             text: 'Overlays custom graphics and personalized text in the footer area of the video. Great for sports teams and businesses.',
-            // link1: 'waiting',
-            // link2: 'waiting',
         },
         {
             title: <FaCloudUploadAlt />,
-            // subtitle: 'waiting',
             text: 'Custom and Auction sections need a different background color to separate themselves and give the design a little more depth.',
-            // link1: 'waiting',
-            // link2: 'waiting',
         },
     ];
 

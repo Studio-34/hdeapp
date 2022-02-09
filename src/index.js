@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import App from './App';
-// import Faq from './Comps/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Comps/Navbar'
 import Home from './Comps/Home'
