@@ -144,7 +144,7 @@ p.question {
 
 .indent {
   color: #5c5b5b;
-  text-indent: 5rem;
+  text-indent: 2em;
 }
 
 .brand {
@@ -221,6 +221,10 @@ div {
     scroll-margin: 50px;
     // scroll-padding: 50px;
   }
+}
+
+.form-label {
+  color: #fff;
 }
 
 @media (max-width: 991px) {

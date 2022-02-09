@@ -32,7 +32,7 @@ export default function Contact() {
                 <Col xs={8} className="mx-auto">
                 <h2 className="text-center">Contact Us</h2>
 
-                    {/* <Form ref={form} onSubmit={sendEmail}>
+                    <Form ref={form} onSubmit={sendEmail}>
                         <Form.Group className="mb-3" controlId="formBasicText">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" placeholder="Name" name="user_name" />
@@ -57,8 +57,8 @@ export default function Contact() {
                         <Button variant="primary" type="submit">
                             Submit
                         </Button>
-                    </Form> */}
-                    <form ref={form} onSubmit={sendEmail}>
+                    </Form>
+                    {/* <form ref={form} onSubmit={sendEmail}>
                         <label>Name</label>
                         <input type="text" name="user_name" />
                         <label>Email</label>
@@ -66,7 +66,7 @@ export default function Contact() {
                         <label>Message</label>
                         <textarea name="message" />
                         <input type="submit" value="Send" />
-                    </form>
+                    </form> */}
                 </Col>
             </Row>
         </Container>
