@@ -35,14 +35,14 @@ export default function Contact() {
                     <Form ref={form} onSubmit={sendEmail}>
                         <Form.Group className="mb-3" controlId="formBasicText">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Name" name="user_name" />
+                            <Form.Control type="text" placeholder="Name" name="from_name" />
                             <Form.Text className="text-muted">
                                 Please Provide Your Name
                             </Form.Text>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="email@email.com" name="user_email" />
+                            <Form.Control type="email" placeholder="email@email.com" name="reply_to" />
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>

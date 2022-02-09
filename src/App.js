@@ -1,19 +1,19 @@
 import './App.scss';
-import { Switch, Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 // import 'https://player.vimeo.com/api/player.js'
 import Video from './Comps/Video';
-import Pitch from './Comps/Pitch';
-import Keys from './Comps/Keys';
+// import Pitch from './Comps/Pitch';
+// import Keys from './Comps/Keys';
 // import Card from './Comps/Card';
-import Header from './Comps/Header';
-import Pricing from './Comps/Pricing';
-import Navbar from './Comps/Navbar';
+// import Header from './Comps/Header';
+// import Pricing from './Comps/Pricing';
+// import Navbar from './Comps/Navbar';
 import Slider from './Comps/Slider';
 import About from './Comps/About';
-import Home from './Comps/Home';
-import Auction from './Comps/Auction';
+// import Home from './Comps/Home';
+// import Auction from './Comps/Auction';
 import Faq from './Comps/Faq';
-import Footer from './Comps/Footer';
+// import Footer from './Comps/Footer';
 import Contact from './Comps/Contact';
 
 function App() {

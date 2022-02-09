@@ -39,7 +39,7 @@ export default function navbar() {
                                     <Nav.Link as={HashLink} smooth activeClassName="active"
                                         scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: '#fff' }} to="/#faq" href="/#faq">FAQs</Nav.Link>
                                     <Nav.Link as={HashLink} smooth activeClassName="active"
-                                        scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: '#fff' }} to="/#contact">Contact</Nav.Link>
+                                        scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} activeStyle={{ color: '#fff' }} to="/#contact" href="/#contact">Contact</Nav.Link>
                                 </ScrollSpy>
                             </Nav>
                         </Navbar.Collapse>

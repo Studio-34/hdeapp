@@ -7,12 +7,13 @@ export default function Video(props) {
 
     return (
         <Container id={props.sectionID} className="py-5">
-            <Row className="text-center">
-                <h2>
+            <Row>
+                <h2 className="text-center">
                     {props.videoSection}
                 </h2>
+                <p className='mx-3'>
                 {props.videoText}
-
+                </p>
             </Row>
             <Row className="justify-content-center">
                 <div className="videoDiv py-5 text-center" id={props.videoID}>
