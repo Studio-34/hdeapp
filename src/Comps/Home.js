@@ -22,7 +22,7 @@ export default function Home() {
                         This innovative app splices multiple clips into one seamless video, and delivers the video to you in the form of an easily shareable link.
                     </p>
 
-                    <Row>
+                    <Row className="mt-5 px-2">
                     <Col>
                         <Link to="https://apps.apple.com/us/app/highdefevents/id1570404215">
                             <img className="img-fluid" src={AppStore} alt="App Store Icon" />
@@ -35,7 +35,7 @@ export default function Home() {
                     </Col>
                     </Row>
                 </Col>
-                <Col xs={12} lg={3}>
+                <Col xs={12} lg={3} className='d-flex align-items-center'>
                     <img src={iPhone} className="img-fluid" alt="HDE App on iPhone" />
 
                 </Col>

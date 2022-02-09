@@ -48,7 +48,7 @@ export default function About() {
                     </p>
                 </Col>
                 <Row className='justify-content-center features'>
-                <h3 className='text-center py-3'>
+                <h3 className='text-center py-5'>
                     Key Features
                 </h3>
                 </Row>

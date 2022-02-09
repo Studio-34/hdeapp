@@ -206,8 +206,6 @@ li:hover ul {
   .row {
     padding: calc(3vh + 5px) calc(10vw + 5px); 
   }
-  // padding-right: calc(20vw + 20px);
-  // padding-left: calc(20vw + 20px);
   background-color: #b9611d;
   color:black;
 }
@@ -224,7 +222,6 @@ div {
   #about, #custom, #auction, #faq, #contact {
     scroll-snap-type: y proximity;
     scroll-margin: 50px;
-    // scroll-padding: 50px;
   }
 }
 

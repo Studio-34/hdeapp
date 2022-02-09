@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 export default function Ratings(props) {
 
     return (
-        <Container className='mx-auto h-100 resText'>
+        <Container className='mx-auto h-100 d-flex align-items-center'>
             <IconContext.Provider
                 value={{ color: '#b9611d', size: '2.3rem' }}
             >
@@ -15,7 +15,6 @@ export default function Ratings(props) {
 
                         <Col className="text-center">
                             {props.stars}
-                            <starReview />
                         </Col>
                         <Col>
                             {props.review}
