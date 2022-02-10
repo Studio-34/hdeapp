@@ -9,7 +9,7 @@ export default function Video(props) {
                 <h2 className="text-center">
                     {props.videoSection}
                 </h2>
-                <p className='mx-3'>
+                <p>
                 {props.videoText}
                 </p>
             </Row>

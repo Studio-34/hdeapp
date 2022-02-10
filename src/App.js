@@ -68,7 +68,11 @@ function App() {
           <Video
             sectionID="custom"
             videoSection="Custom Videos"
-            videoText="The custom section of the app is designed to create videos for both personal and business use. Users can create footer templates with their corporate or team logo and color scheme, and these graphics can be added to the footer of each video published, along with custom text. The users can keep the audio captured while recording, add background music from their device's library, or mute the audio altogether."
+            videoText={
+              <>
+                <p>The custom section of the app is designed to create videos for both personal and business use. Users can create footer templates with their corporate or team logo and color scheme, and these graphics can be added to the footer of each video published, along with custom text. The users can keep the audio captured while recording, add background music from their device's library, or mute the audio altogether.</p>
+              </>
+            }
             videoID="mainVideo"
             videoLink="https://player.vimeo.com/video/637515772?h=07821083e8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             videoOtherLinks="https://vimeo.com/613887234/344c28c611"
@@ -76,7 +80,13 @@ function App() {
           <Video
             sectionID="auction"
             videoSection="Auction Videos"
-            videoText="This section of the app is designed to provide the ultimate streamlined process for submitting marketing videos for auctions. The app administrator gathers information from the auction company such as desired video clips, clip order and duration, and custom graphics. The administrator will also retrieve identifying data relating to the auction items that will be overlaid onto the graphics. From the user's standpoint, all they need to do is gather the clips following the directions within the app, and they're done. This amazing app splices the clips together, adds the custom auction graphics and desired item information onto the footer, uploads the video to Vimeo (hosting website), and emails the video link directly to the auction company. The end result being a uniform, professional quality video that was fast and easy for the user to create, and delivered to the auction company in a format easily shared or embedded on their website or social media. If you're an auction company representative please complete a contact form so we can connect and assist you in placing your next auction on the HDE app."
+            videoText={
+              <>
+                <p>This section of the app is designed to provide the ultimate streamlined process for submitting marketing videos for auctions. The app administrator gathers information from the auction company such as desired video clips, clip order and duration, and custom graphics. The administrator will also retrieve identifying data relating to the auction items that will be overlaid onto the graphics.</p>
+                <p>From the user's standpoint, all they need to do is gather the clips following the directions within the app, and they're done. This amazing app splices the clips together, adds the custom auction graphics and desired item information onto the footer, uploads the video to Vimeo (hosting website), and emails the video link directly to the auction company.</p>
+                <p>The end result being a uniform, professional quality video that was fast and easy for the user to create, and delivered to the auction company in a format easily shared or embedded on their website or social media. If you're an auction company representative please complete a contact form so we can connect and assist you in placing your next auction on the HDE app.</p>
+              </>
+            }
             videoID="auctionVideo"
             videoLink="https://player.vimeo.com/video/602008665?h=2a2bbb7619&color=ff9933"
             videoOtherLinks="https://vimeo.com/602008665"

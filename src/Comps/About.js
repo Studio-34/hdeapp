@@ -43,7 +43,7 @@ export default function About() {
                     <h2 className='text-center'>
                         About
                     </h2>
-                    <p className="mx-3">
+                    <p>
                         If you love sharing video content with your family, friends, or business partners, but are tired of having to share multiple files at a time, this app is for you!! If you would love to have multiple videos spliced into one, but don’t have the time, knowledge or desire to master complicated editing software, this app is the perfect solution!! The HDE app is jam-packed with features that are all designed for one purpose… to simplify the user experience.
                     </p>
                 </Col>
@@ -53,11 +53,7 @@ export default function About() {
                 </h3>
                 </Row>
                 <Row xs={1} lg={3}>
-                    {/* <CardGroup className='mx-auto'> */}
-                    {featureCard}
-
-                {/* </CardGroup> */}
-                
+                    {featureCard}                
                 </Row>
             </Row>
         </Container>
