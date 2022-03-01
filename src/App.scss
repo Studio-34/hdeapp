@@ -1,0 +1,238 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary: #b9611d;
+
+$theme-colors: (
+  "primary": #b9611d,
+);
+
+
+html, body {
+  height: 100vh;
+  background: #232323;
+  background: linear-gradient(180deg, rgba(0,0,17,1) 0%, rgba(35,35,35,1) 31%);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100%;
+  top: 0;
+  color: white;
+}
+
+.headerRow {
+  padding: 5vw 5vw 10px;
+}
+
+.headerText {
+  padding: 5vw 5vw 5vw 0;
+}
+
+.headerText h1 {
+  font-size: calc(30px + 1vw);
+}
+
+.headerText p {
+  font-size: calc(16px + .5vw)
+}
+
+
+/* .slider {
+  background-color: unset;
+  background-image: url(./img/SlideShow/Overlay.png);
+} */
+
+/* section.slideshow{ */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* background-color: rgb(32,32,32); */
+/* } */
+/* section.slideshow div.slide-holder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+} */
+
+section.slideshow section.current-slide{
+    height: 100%;
+}
+
+section.slideshow div.slide-thumbnail{
+    width: 100%;
+    background-size: 100%;
+    padding-top: 74.166666666667%;
+    height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frameDiv {
+  border: .5rem solid #131313b7;
+  border-style: solid;
+}
+
+.header {
+  height: 75vh;
+  background-image: url(./img/rowOne.png), url(./img/rowTwo.png), url(./img/rowThree.png), url(./img/rowFour.png), url(./img/rowFive.png), url(./img/rowSix.png);
+  background-repeat: repeat;
+  background-size: 100% auto;
+  background-position: center;
+  animation: header-bg-scroll infinite 135s linear;
+}
+
+@keyframes header-bg-scroll {
+  from {
+    background-position: 0 -500%;
+  }
+  to {
+    background-position: 0 500%;
+  }
+}
+
+.hero {
+  width: 100vh;
+  padding-top: 100vh;
+  position: relative;
+}
+
+.innerHero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.heroBg {
+  background-color: #949393f6;
+  border-radius: 20%;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  color: black;
+}
+
+.card svg {
+  font-size: 5rem !important;
+  color: #b9611d !important;
+}
+
+.price {
+  color: black;
+}
+
+p.question {
+  font-weight: bolder;
+  /* font-size: 1.5rem; */
+}
+
+.indent {
+  color: #5c5b5b;
+  text-indent: 2em;
+}
+
+.brand {
+  color: #b9611d;
+  border-color: #b9611d;
+}
+
+.brand:hover {
+  transition: all .3s ease;
+  border-color: #6d3a12;
+  color: #6d3a12;
+}
+
+.scrollable {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.videoDiv {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vidCont {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  transition: 100ms ease-in;
+
+}
+li:hover {
+  font-weight: bold;
+  color: white;
+}
+
+li:hover ul {
+  font-weight: normal;
+  color: wheat;
+}
+
+.footer {
+  .row {
+    padding: calc(3vh + 5px) calc(10vw + 5px); 
+  }
+  background-color: #b9611d;
+  color:black;
+}
+.active {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #b9611d !important;
+  border-color: #b9611d !important;
+}
+
+div {
+  #about, #custom, #auction, #faq, #contact {
+    scroll-snap-type: y proximity;
+    scroll-margin: 50px;
+  }
+}
+
+.form-label {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  div {
+    #about, #custom, #auction, #faq, #contact {
+    scroll-snap-type: y proximity;
+    scroll-margin: 20rem;
+    }
+  }
+}
+
+p {
+  max-width: 1000px;
+  margin: 30px auto;
+}
