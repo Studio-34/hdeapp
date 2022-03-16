@@ -13,12 +13,23 @@ html, body {
   background: linear-gradient(180deg, rgba(0,0,17,1) 0%, rgba(35,35,35,1) 31%);
   overflow-y: auto;
   overflow-x: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+p {
+  max-width: 1000px;
+  margin: 30px auto;
 }
 
 .App {
   height: 100%;
   top: 0;
   color: white;
+}
+
+#home {
+  max-width: 1500px;
+  padding: 10vh 0 0;
 }
 
 .headerRow {
@@ -37,6 +48,13 @@ html, body {
   font-size: calc(16px + .5vw)
 }
 
+.slideshow {
+  padding: 5vh 0;
+  border-bottom: 1px solid #353535;
+  border-top: 1px solid #353535;
+  background: #232323;
+
+}
 
 /* .slider {
   background-color: unset;
@@ -119,7 +137,29 @@ section.slideshow div.slide-thumbnail{
 }
 
 .card {
-  color: black;
+  // color: black;
+  color: whitesmoke;
+  background-color: transparent !important;
+  border: 1px solid #343434;
+  border-radius: 0px;
+  padding: 20px;
+  letter-spacing: 1.23px;
+}
+
+#faq .MuiTypeography-root, .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  background-color: transparent !important;
+  color: whitesmoke !important;
+  border: 1px solid #343434 !important;
+}
+
+#faq .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  border: 2px whitesmoke !important;
+}
+
+.card-body {
+  background: transparent;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .card svg {
@@ -223,16 +263,33 @@ div {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+.form-control {
+  background-color: #353535 !important;
+}
+
+@media only screen and (max-width: 991px) {
   div {
     #about, #custom, #auction, #faq, #contact {
     scroll-snap-type: y proximity;
     scroll-margin: 20rem;
     }
   }
+  .iphone {
+    max-width: 75% !important;
+    // display: none;
+  }
+  .ratings {
+    max-height: 300px !important;
+    padding: none !important;
+  }
 }
 
-p {
-  max-width: 1000px;
-  margin: 30px auto;
-}
+// @media only screen and (min-width: 992px) {
+//   .ratings {
+//     padding: 5vh 0;
+//     border-bottom: 1px solid #353535;
+//     border-top: 1px solid #353535;
+//     background: #232323;
+
+//   }
+// }

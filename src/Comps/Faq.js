@@ -50,7 +50,7 @@ let faqMap = qAList.map((el, index) =>
             </Typography>
         </AccordionSummary>
         <AccordionDetails>
-            <Typography className="indent text-start">
+            <Typography className="indent answer text-start">
                 {el.answer}
             </Typography>
         </AccordionDetails>
@@ -59,14 +59,14 @@ let faqMap = qAList.map((el, index) =>
 
 export default function Faq() {
     return (
-        <Container className="text-center my-5" id="faq">
+        <Container className="text-start my-5" id="faq">
             <Row>
                 <Col>
-                    <h2>
+                    <h2 className="text-center pb-2">
                         Frequently Asked Questions
                     </h2>
                     {faqMap}
-                    <p className="pt-2">
+                    <p className="pt-3 text-center">
                         If you have any other questions or issues, please contact us for support. 
                     </p>
 

@@ -29,8 +29,8 @@ export default function About() {
                     <Card.Text>
                         {feature.text}
                     </Card.Text>
-                    <Card.Link href="#">{feature.link1}</Card.Link>
-                    <Card.Link href="#">{feature.link2}</Card.Link>
+                    {/* <Card.Link href="#">{feature.link1}</Card.Link>
+                    <Card.Link href="#">{feature.link2}</Card.Link> */}
                 </Card.Body>
             </Card>
         </Col>
