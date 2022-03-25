@@ -16,7 +16,7 @@ export default function About() {
         },
         {
             title: <FaCloudUploadAlt />,
-            text: 'Custom and Auction sections need a different background color to separate themselves and give the design a little more depth.',
+            text: 'Uploads the video directly to a web hosting platform, and delivers the video to the user as an easily shareable link',
         },
     ];
 
