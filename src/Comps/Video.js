@@ -10,7 +10,7 @@ export default function Video(props) {
                     {props.videoSection}
                 </h2>
                 <p>
-                {props.videoText}
+                    {props.videoText}
                 </p>
             </Row>
             <Row className="justify-content-center">
@@ -18,9 +18,11 @@ export default function Video(props) {
                     <div className="text-center vidCont mb-5 container">
                         <iframe title={props.videoSection} className="responsive-iframe" src={props.videoLink} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <Button>
-                        Click here for more tutorials
-                    </Button>
+                    <a href={props.videoOtherLinks}>
+                        <Button>
+                            Click here for more tutorials
+                        </Button>
+                    </a>
                 </div>
 
             </Row>

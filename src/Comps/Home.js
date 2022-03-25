@@ -23,19 +23,19 @@ export default function Home() {
                     </p>
 
                     <Row className="mt-5 px-2">
-                    <Col>
-                        <Link to="https://apps.apple.com/us/app/highdefevents/id1570404215">
-                            <img className="img-fluid" src={AppStore} alt="App Store Icon" />
-                        </Link>
-                    </Col>
-                    <Col>
-                        <Link to="https://apps.apple.com/us/app/highdefevents/id1570404215">
-                            <img className="img-fluid" src={GooglePlay} alt="Google Play Icon" />
-                        </Link>
-                    </Col>
+                        <Col xs={12}> {/* change this to xs={6} when Google Play is added */}
+                            <a href="https://apps.apple.com/us/app/highdefevents/id1570404215">
+                                <img className="img-fluid" src={AppStore} alt="App Store Icon" />
+                            </a>
+                        </Col>
+                        {/* <Col xs={6}>
+                            <a href="https://apps.apple.com/us/app/highdefevents/id1570404215">
+                                <img className="img-fluid" src={GooglePlay} alt="Google Play Icon" />
+                            </a>
+                        </Col> */}
                     </Row>
                 </Col>
-                <Col xs={12} lg={3} className='d-flex align-items-center'>
+                <Col xs={12} lg={3} className='d-flex align-items-center iphone'>
                     <img src={iPhone} className="img-fluid" alt="HDE App on iPhone" />
 
                 </Col>
