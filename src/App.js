@@ -75,7 +75,7 @@ function App() {
             }
             videoID="mainVideo"
             videoLink="https://player.vimeo.com/video/663819579?h=434694f0d4&color=ff9933"
-            videoOtherLinks="https://vimeo.com/613887234/344c28c611"
+            videoOtherLinks="https://vimeo.com/782965811"
           />
           <Video
             sectionID="auction"
@@ -89,7 +89,7 @@ function App() {
             }
             videoID="auctionVideo"
             videoLink="https://player.vimeo.com/video/629219094?h=eb979ed607%22%20"
-            videoOtherLinks="https://vimeo.com/602008665"
+            videoOtherLinks="https://vimeo.com/782965064"
           />
           <Faq />
           <Contact />
