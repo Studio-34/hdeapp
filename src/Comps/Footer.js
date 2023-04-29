@@ -11,7 +11,6 @@ export default function Footer() {
                 </Col>
                 <Col xs={8} md={6} className="align-bottom">
                     <span className="align-bottom">&copy; 2022 - HDE App, LLC</span>
-                    <span className='invis'></span>
                 </Col>
             </Row>
 
