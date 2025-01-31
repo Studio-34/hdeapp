@@ -1,3 +1,18 @@
+This is a Firebase app. 
+It needs to be run on an older version of node. 
+`nvm use 16  # If using nvm (Node Version Manager)`
+
+
+## To Publish to https://hdeapp.com/
+Build for prod:
+`npm run build`
+
+login to firebase:
+`firebase login`
+
+Deploy:
+`firebase deploy`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
