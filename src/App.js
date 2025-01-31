@@ -4,7 +4,6 @@ import Video from './Comps/Video';
 import Slider from './Comps/Slider';
 import About from './Comps/About';
 import Faq from './Comps/Faq';
-import Contact from './Comps/Contact';
 
 function App() {
 
@@ -92,7 +91,6 @@ function App() {
             videoOtherLinks="https://vimeo.com/782965064"
           />
           <Faq />
-          <Contact />
         </>
       } />
     </Routes>

@@ -54,9 +54,8 @@ export default function Faq() {
                     </h2>
                     {faqMap}
                     <p className="pt-3 text-center">
-                        If you have any other questions or issues, please contact us for support. 
+                        If you have any other questions or issues, please contact us at <a href="mailto:info@hdeapp.com">info@hdeapp.com</a> for support. 
                     </p>
-
                 </Col>
             </Row>
         </Container>
